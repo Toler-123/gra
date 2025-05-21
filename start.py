@@ -20,8 +20,8 @@ time.sleep(1)
 # 정지
 tello.send_rc_control(0, 0, 0, 0)
 
-# 이동 경로 기록 (예: 전진 한 번만 기록)
-route = [(0, 30, 0)]  # (x, y, z) 형식의 상대 이동 좌표
+# 이동 경로 기록
+route = [(0, 30, 0)]
 
 # 경로 파일로 저장
 with open("route.pkl", "wb") as f:
