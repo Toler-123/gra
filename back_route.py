@@ -21,7 +21,7 @@ time.sleep(2)
 print(f"[BACK] 저장된 {len(route)}단계 경로 따라 복귀 중...")
 for (x, y, z) in reversed(route):
     print(f"[BACK] 이동 중: x={x}, y={y}, z={z}")
-    tello.go_xyz_speed(x, y, z, 30)  # 좌표로 이동 (상대좌표)
+    tello.go_xyz_speed(x, y, z, 30)  # 상대좌표로 이동
     time.sleep(2)  # 이동 대기
 
 # 착륙
